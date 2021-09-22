@@ -7,5 +7,39 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <form action="" method="POST">
+      <div class="form">
+        <label for="nombre">Ingrese su nombre</label>
+        <input type="text" name="nombre" value="" placeholder="Pedro Martínez">
+      </div>
+
+      <div class="form">
+        <label for="colores">Seleccione un color</label>
+        <select name="colores">
+          <option value="rojo">Rojo</option>
+          <option value="azul">Azul</option>
+          <option value="verde">Verde</option>
+          <option value="rosa">Rosado</option>
+          <option value="naranja">Naranja</option>
+          <option value="amarillo">Amarillo</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label for="email">Escriba su email</label>
+        <input type="email" name="email" placeholder="nombre@example.com">
+      </div>
+
+      <div class="form">
+        <label for="edad">Escriba su edad</label>
+        <input type="number" name="edad" placeholder="21">
+      </div>
+
+      <div class="form">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
   </body>
 </html>
